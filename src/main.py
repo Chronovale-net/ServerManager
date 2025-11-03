@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-# Basic cat program
+from dotenv import load_dotenv
 
-print("Ready!")
+# load env variables
+
+load_dotenv()
 
 if __name__ == "__main__":
+    print("Ready!")
     while True:
         print("Enter a string: ", end="")
         lol = input()

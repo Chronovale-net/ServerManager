@@ -1,5 +1,7 @@
 # Basic cat program
 
+print("Ready!")
+
 while True:
     lol = input("Enter a string: ")
     if lol == "exit":

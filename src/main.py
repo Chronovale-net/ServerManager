@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
 # Basic cat program
 
 print("Ready!")
 
-while True:
-    lol = input("Enter a string: ")
-    if lol == "exit":
-        break
-    print(lol)
+if __name__ == "__main__":
+    while True:
+        print("Enter a string: ", end="")
+        lol = input()
+        if lol == "exit":
+            break
+        print(lol)

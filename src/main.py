@@ -11,6 +11,7 @@ from pydactyl import PterodactylClient
 from commands import CommandRegistry
 from commands.show_servers import ShowServersCommand
 from commands.create_server import CreateServerCommand
+from commands.update_servers import UpdateServersCommand
 
 
 # Load env variables
@@ -100,6 +101,7 @@ def main():
     registry = CommandRegistry()
     registry.register(ShowServersCommand())
     registry.register(CreateServerCommand())
+    registry.register(UpdateServersCommand())
 
     # Initialize readline for command history
     init_readline()
